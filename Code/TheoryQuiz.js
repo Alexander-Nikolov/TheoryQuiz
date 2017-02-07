@@ -61,7 +61,7 @@ function prevQuestion() {
     if (questionNumber <= 0) {
         return;
     }
-    
+
     list.innerHTML = '';
     questionNumber--;
     questions[questionNumber].isCorrect = false;
@@ -73,7 +73,7 @@ function nextQuestion() {
     if (questionNumber > questions.length - 1) {
         return;
     }
-    
+
     questions[questionNumber].isCorrect = false;
     questionNumber++;
     result.push('Question ' + (questionNumber) + ': You skipped it.');
@@ -161,7 +161,22 @@ var questions = [
     new Question('Are those statements about what JS features is correct: 1 - JavaScript is is omplementary to and integrated with HTML  2 - JavaScript is open and cross-platform ?', '1', '2', 'Both', 'Both '),
     new Question('What is an advantage in JS ?', 'No fast feedback, that means less bugs', 'Less server iteraction', 'Simple interfaces', 'Less server iteraction'),
     new Question('Is JS case-sensative ?', 'Yes', 'No', 'Depends', 'Yes'),
-    new Question('Which brackets are used to create an object in JS ?', '{}', '()', '[]', '{}')
+    new Question('Which brackets are used to create an object in JS ?', '{}', '()', '[]', '{}'),
+    new Question('For what does "CDN" stand ?', 'Corporally Directed News', 'Content Delivery Network', 'Center Delivery Network', 'Content Delivery Network'),
+    new Question('For what is "CDN" ?', 'Stores large content for your site so upon request those files will be closer to the client', 'The place on a server where all the files are stored', 'Delivers ip adresses to the client', 'Stores large content for your site so upon request those files will be closer to the client'),
+    new Question('As a CSS selector what will this do: "div p" ?', 'Targets all p elements that are in div elements ', 'Targets all div and p elements ', 'Targets all p elements that are direct children to a div', 'Targets all p elements that are in div elements '),
+    new Question('As a CSS selector what will this do: "div, p" ?', 'Targets all p elements which are after a div element', 'Targets all div and p elements', 'Targets all div and p elements ', 'Targets all div and p elements '),
+    new Question('As a CSS selector what will this do: "div+p" ?', 'Targets all p elements that are direct children to a div', 'Targets all p elements that are right after a div element', 'Targets all p elements that are direct children to a div', 'Targets all p elements that are right after a div element'),
+    new Question('As a CSS selector what will this do: "div~p" ?', 'Targets all p elements that are direct children to a div', 'Targets all p elements that are in div elements', 'Targets all p elements which are after a div element', 'Targets all p elements which are after a div element'),
+    new Question('As a CSS selector what will this do: "div>p" ?', 'Targets all p elements that are direct children to a div', 'Targets all div and p elements', 'Targets all p elements that are right after a div element', 'Targets all p elements that are direct children to a div'),
+    new Question('As a CSS selector what will this do: "input[type=text]" ?', 'Targets all input elements without the type of text', 'Targets all input elements that are with type of text', 'Targets all input types', 'Targets all input elements that are with type of text'),
+    new Question('What are the names for the 2 sections in an object ?', 'Fields and Methods', 'Places and Functions', 'Stack and Heap', 'Fields and Methods'),
+    new Question('Objects are mainly made out of ?', 'Names and Strings', 'Whitespace', 'Properties and Values', 'Properties and Values'),
+    new Question('To what is "wrapper" reffering when talking about objects ?', 'Wrapper is used to wrap all of the code', 'Wrapper is just another name for a big object', 'Wrapper is made when a method is used on primitive data type to convert the data to object so the method can work', 'Wrapper is made when a method is used on primitive data type to convert the data to object so the method can work'),
+    new Question('What are "array-like" objects ?', 'Objects which have property names in the same order as indexes', 'Arrays are the same as Objects they are always array-like', 'If there is an object in an array', 'Objects which have property names in the same order as indexes'),
+    new Question('Is it a good practice to wrap your application in an immidiate function that returns an object with variables ?', 'Yes', 'No', 'That\'s not even possible', 'Yes'),
+    new Question('What is "this" ?', 'The same as "that"', 'Reffers to the object that uses it', 'It is a function only for objects that can find all of them', 'Reffers to the object that uses it'),
+    new Question('What does the  "call" method do ?', 'Calls the object so the user can use it', 'Reffers to the object that uses it', 'Calls a method of an object for another object', 'Calls a method of an object for another object')
 ];
 
 
