@@ -176,7 +176,11 @@ var questions = [
     new Question('What are "array-like" objects ?', 'Objects which have property names in the same order as indexes', 'Arrays are the same as Objects they are always array-like', 'If there is an object in an array', 'Objects which have property names in the same order as indexes'),
     new Question('Is it a good practice to wrap your application in an immidiate function that returns an object with variables ?', 'Yes', 'No', 'That\'s not even possible', 'Yes'),
     new Question('What is "this" ?', 'The same as "that"', 'Reffers to the object that uses it', 'It is a function only for objects that can find all of them', 'Reffers to the object that uses it'),
-    new Question('What does the  "call" method do ?', 'Calls the object so the user can use it', 'Reffers to the object that uses it', 'Calls a method of an object for another object', 'Calls a method of an object for another object')
+    new Question('What does the  "call" method do ?', 'Calls the object so the user can use it', 'Reffers to the object that uses it', 'Calls a method of an object for another object', 'Calls a method of an object for another object'),
+    new Question('What is "new" ?', '"New" makes a new empty object', 'New tells the constructor to create an object', 'New resets the object', '"New" makes a new empty object'),
+    new Question('How does the constructor work ?', 'Constructs functions for you', 'Changes an object', 'Function that pushes it\'s values to an empty object, that is represented by this', 'Function that pushes it\'s values to an empty object, that is represented by this'),
+    new Question('How to make a new object without new ?', 'object = function(object)', 'object = {}; function.call(object); return object;', 'object = function(new object)', 'object = {}; function.call(object); return object;'),
+    new Question('What is call ?', 'Call is every time you use a function', 'Just an object calling its method', 'Calls a method from an object for another object', 'Calls a method from an object for another object')
 ];
 
 
